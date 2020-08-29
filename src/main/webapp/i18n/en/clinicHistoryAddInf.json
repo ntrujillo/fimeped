@@ -1,0 +1,39 @@
+{
+    "fimepedApp": {
+        "clinicHistoryAddInf" : {
+            "home": {
+                "title": "ClinicHistoryAddInfs",
+                "createLabel": "Create a new ClinicHistoryAddInf",
+                "createOrEditLabel": "Create or edit a ClinicHistoryAddInf"
+            },
+            "created": "A new ClinicHistoryAddInf is created with identifier {{ param }}",
+            "updated": "A ClinicHistoryAddInf is updated with identifier {{ param }}",
+            "deleted": "A ClinicHistoryAddInf is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ClinicHistoryAddInf {{ id }}?"
+            },
+            "detail": {
+                "title": "ClinicHistoryAddInf"
+            },
+            "menarcheAge": "MenarcheAge",
+            "menopauseAge": "MenopauseAge",
+            "cycles": "Cycles",
+            "sexuallyActive": "SexuallyActive",
+            "feat": "Feat",
+            "deliveries": "Deliveries",
+            "abortions": "Abortions",
+            "caesareans": "Caesareans",
+            "livingChildren": "LivingChildren",
+            "lastMenarche": "LastMenarche",
+            "lastDelivery": "LastDelivery",
+            "lastCitology": "LastCitology",
+            "biopsy": "Biopsy",
+            "protectionMethod": "ProtectionMethod",
+            "hormoneTerapy": "HormoneTerapy",
+            "colposcopy": "Colposcopy",
+            "mammografhy": "Mammografhy",
+            "borrar": "Borrar",
+            "clinic_add_inf": "Clinic_add_inf"
+        }
+    }
+}

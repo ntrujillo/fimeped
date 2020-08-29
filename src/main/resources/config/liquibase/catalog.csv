@@ -1,0 +1,84 @@
+tab_id;cat_id;value 
+cl_gender;M;Masculino
+cl_gender;F;Femenino
+cl_marital_status;S;Soltero
+cl_marital_status;C;Casado
+cl_marital_status;D;Divorciado
+cl_marital_status;V;Viudo
+cl_marital_status;U;Union Libre
+cl_level_education;P;Primaria
+cl_level_education;S;Secundaria
+cl_level_education;R;Superior
+cl_002_8;PRE;Presuntivo
+cl_002_8;DEF;Definitivo
+cl_003_2;1;Vacunas
+cl_003_2;2;Enf. Perinatal
+cl_003_2;3;Enf. Infancia
+cl_003_2;4;Enf. Adolecencia
+cl_003_2;5;Enf. Alergia
+cl_003_2;6;Enf. Cardiaca
+cl_003_2;7;Enf. Respiratoria
+cl_003_2;8;Enf. Digestiva
+cl_003_2;9;Enf. Neurologica
+cl_003_2;10;Enf. Metabolica
+cl_003_2;11;Enf. Hemo Linf
+cl_003_2;12;Enf. Urinaria
+cl_003_2;13;Enf. Traumatica
+cl_003_2;14;Enf. Quirurgica
+cl_003_2;15;Enf. Mental
+cl_003_2;16;Enf. Transm Sex
+cl_003_2;17;Tendencia Sexual
+cl_003_2;18;Riesgo Social
+cl_003_2;19;Riesgo Laboral
+cl_003_2;20;Riesgo Familiar
+cl_003_2;21;Actividad Fisica
+cl_003_2;22;Dieta y Habitos
+cl_003_2;23;Religion Y Cultura
+cl_003_2;24;Otro
+cl_003_3;1;Cardiopatia
+cl_003_3;2;Diabetes
+cl_003_3;3;Enf. C. Vascular
+cl_003_3;4;Hipertension
+cl_003_3;5;Cancer
+cl_003_3;6;Tuberculosis
+cl_003_3;7;Enf. Mental
+cl_003_3;8;Enf. Infecciosa
+cl_003_3;9;Malformacion
+cl_003_3;10;Otro
+cl_003_5_1;CP;Con evidencia de Patologia 
+cl_003_5_1;SP;Sin evidencia de Patologia 
+cl_003_5_2;1;Organos de los Sentidos
+cl_003_5_2;2;Respiratorio
+cl_003_5_2;4;Cardio Vascular
+cl_003_5_2;5;Digestivo
+cl_003_5_2;7;Genital
+cl_003_5_2;8;Urinario
+cl_003_5_2;10;Musculo Esqueletico
+cl_003_5_2;11;Endocrino
+cl_003_5_2;13;Emo Linfatico
+cl_003_5_2;14;Nervioso
+cl_003_7;1R;Piel y Faneras
+cl_003_7;2R;Cabeza
+cl_003_7;3R;Ojos
+cl_003_7;4R;Oidos
+cl_003_7;5R;Nariz
+cl_003_7;6R;Boca
+cl_003_7;7R;Oro Faringe
+cl_003_7;8R;Cuello
+cl_003_7;9R;Axilas -  Mamas
+cl_003_7;10R;Torax
+cl_003_7;11R;Abdomen
+cl_003_7;12R;Columna Vertebral
+cl_003_7;13R;Ingle - Perine
+cl_003_7;14R;Miembros Superiores
+cl_003_7;15R;Miembros Inferiores
+cl_003_7;1S;Organos de los Sentidos
+cl_003_7;2S;Respiratorio
+cl_003_7;3S;Cardio Vascular
+cl_003_7;4S;Digestivo
+cl_003_7;5S;Genital
+cl_003_7;6S;Urinario
+cl_003_7;7S;Musculo Esqueletico
+cl_003_7;8S;Endocrino
+cl_003_7;9S;Hemo Linfatico
+cl_003_7;10S;Neurologico

@@ -1,0 +1,278 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPersonLabel" translate="fimepedApp.person.home.createOrEditLabel">Create or edit a Person</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="person.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="fimepedApp.person.systemInstitution" for="field_systemInstitution">SystemInstitution</label>
+            <input type="text" class="form-control" name="systemInstitution" id="field_systemInstitution"
+                    ng-model="person.systemInstitution"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.operatingUnit" for="field_operatingUnit">OperatingUnit</label>
+            <input type="text" class="form-control" name="operatingUnit" id="field_operatingUnit"
+                    ng-model="person.operatingUnit"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.operatingUnitCode" for="field_operatingUnitCode">OperatingUnitCode</label>
+            <input type="number" class="form-control" name="operatingUnitCode" id="field_operatingUnitCode"
+                    ng-model="person.operatingUnitCode"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.personType" for="field_personType">PersonType</label>
+            <input type="text" class="form-control" name="personType" id="field_personType"
+                    ng-model="person.personType"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.personFaculty" for="field_personFaculty">PersonFaculty</label>
+            <input type="text" class="form-control" name="personFaculty" id="field_personFaculty"
+                    ng-model="person.personFaculty"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.personCareer" for="field_personCareer">PersonCareer</label>
+            <input type="text" class="form-control" name="personCareer" id="field_personCareer"
+                    ng-model="person.personCareer"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.personSemester" for="field_personSemester">PersonSemester</label>
+            <input type="number" class="form-control" name="personSemester" id="field_personSemester"
+                    ng-model="person.personSemester"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.firstName" for="field_firstName">FirstName</label>
+            <input type="text" class="form-control" name="firstName" id="field_firstName"
+                    ng-model="person.firstName"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.secondName" for="field_secondName">SecondName</label>
+            <input type="text" class="form-control" name="secondName" id="field_secondName"
+                    ng-model="person.secondName"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.paternalSurname" for="field_paternalSurname">PaternalSurname</label>
+            <input type="text" class="form-control" name="paternalSurname" id="field_paternalSurname"
+                    ng-model="person.paternalSurname"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.maternalSurname" for="field_maternalSurname">MaternalSurname</label>
+            <input type="text" class="form-control" name="maternalSurname" id="field_maternalSurname"
+                    ng-model="person.maternalSurname"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.cedula" for="field_cedula">Cedula</label>
+            <input type="text" class="form-control" name="cedula" id="field_cedula"
+                    ng-model="person.cedula"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.address" for="field_address">Address</label>
+            <input type="text" class="form-control" name="address" id="field_address"
+                    ng-model="person.address"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.phone" for="field_phone">Phone</label>
+            <input type="text" class="form-control" name="phone" id="field_phone"
+                    ng-model="person.phone"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.birthDate" for="field_birthDate">BirthDate</label>
+            <input type="date" class="form-control" name="birthDate" id="field_birthDate"
+                    ng-model="person.birthDate"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.birthPlace" for="field_birthPlace">BirthPlace</label>
+            <input type="text" class="form-control" name="birthPlace" id="field_birthPlace"
+                    ng-model="person.birthPlace"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.nationality" for="field_nationality">Nationality</label>
+            <input type="text" class="form-control" name="nationality" id="field_nationality"
+                    ng-model="person.nationality"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.age" for="field_age">Age</label>
+            <input type="number" class="form-control" name="age" id="field_age"
+                    ng-model="person.age"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.gender" for="field_gender">Gender</label>
+            <input type="text" class="form-control" name="gender" id="field_gender"
+                    ng-model="person.gender"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.maritalStatus" for="field_maritalStatus">MaritalStatus</label>
+            <input type="text" class="form-control" name="maritalStatus" id="field_maritalStatus"
+                    ng-model="person.maritalStatus"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.approvedInstructionYear" for="field_approvedInstructionYear">ApprovedInstructionYear</label>
+            <input type="text" class="form-control" name="approvedInstructionYear" id="field_approvedInstructionYear"
+                    ng-model="person.approvedInstructionYear"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.admissionDate" for="field_admissionDate">AdmissionDate</label>
+            <input type="date" class="form-control" name="admissionDate" id="field_admissionDate"
+                    ng-model="person.admissionDate"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.occupation" for="field_occupation">Occupation</label>
+            <input type="text" class="form-control" name="occupation" id="field_occupation"
+                    ng-model="person.occupation"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.companyWork" for="field_companyWork">CompanyWork</label>
+            <input type="text" class="form-control" name="companyWork" id="field_companyWork"
+                    ng-model="person.companyWork"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.insuranceType" for="field_insuranceType">InsuranceType</label>
+            <input type="text" class="form-control" name="insuranceType" id="field_insuranceType"
+                    ng-model="person.insuranceType"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.referred" for="field_referred">Referred</label>
+            <input type="text" class="form-control" name="referred" id="field_referred"
+                    ng-model="person.referred"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.kinshipName" for="field_kinshipName">KinshipName</label>
+            <input type="text" class="form-control" name="kinshipName" id="field_kinshipName"
+                    ng-model="person.kinshipName"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.kinship" for="field_kinship">Kinship</label>
+            <input type="text" class="form-control" name="kinship" id="field_kinship"
+                    ng-model="person.kinship"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.kinshipAddress" for="field_kinshipAddress">KinshipAddress</label>
+            <input type="text" class="form-control" name="kinshipAddress" id="field_kinshipAddress"
+                    ng-model="person.kinshipAddress"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.kinshipPhone" for="field_kinshipPhone">KinshipPhone</label>
+            <input type="text" class="form-control" name="kinshipPhone" id="field_kinshipPhone"
+                    ng-model="person.kinshipPhone"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.neighborhood" for="field_neighborhood">Neighborhood</label>
+            <input type="text" class="form-control" name="neighborhood" id="field_neighborhood"
+                    ng-model="person.neighborhood"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.parroquia" for="field_parroquia">Parroquia</label>
+            <input type="text" class="form-control" name="parroquia" id="field_parroquia"
+                    ng-model="person.parroquia"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.canton" for="field_canton">Canton</label>
+            <input type="text" class="form-control" name="canton" id="field_canton"
+                    ng-model="person.canton"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.provincia" for="field_provincia">Provincia</label>
+            <input type="text" class="form-control" name="provincia" id="field_provincia"
+                    ng-model="person.provincia"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.zone" for="field_zone">Zone</label>
+            <input type="text" class="form-control" name="zone" id="field_zone"
+                    ng-model="person.zone"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.person.culturalGroup" for="field_culturalGroup">CulturalGroup</label>
+            <input type="text" class="form-control" name="culturalGroup" id="field_culturalGroup"
+                    ng-model="person.culturalGroup"
+                    >
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

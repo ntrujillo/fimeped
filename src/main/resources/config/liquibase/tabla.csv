@@ -1,0 +1,10 @@
+tab_id;description
+cl_level_education;Nivel de educacion
+cl_gender;Genero
+cl_marital_status;Estado Civil
+cl_002_8;Diagnosticos presuntivo definitivo
+cl_003_2;Antecedentes Personales lista actividades
+cl_003_3;Antecedentes Familiares lista enfermedades
+cl_003_5_1;Revision Actual con evidencia sin evidencia
+cl_003_5_2;Revision Actual lista organos
+cl_003_7;Examen Fisico lista partes del cuerpo

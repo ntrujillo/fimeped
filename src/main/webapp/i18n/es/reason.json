@@ -1,0 +1,22 @@
+{
+    "fimepedApp": {
+        "reason" : {
+            "home": {
+                "title": "Motivo de Consulta",
+                "createLabel": "Nuevo Motivo de Consulta",
+                "createOrEditLabel": "Create or edit a Reason"
+            },
+            "created": "Nuevo Motivo De Consulta creado {{ param }}",
+            "updated": "Un Motivo De Consulta actualizado{{ param }}",
+            "deleted": "Un Motivo De Consulta eliminado {{ param }}",
+            "delete": {
+                "question": "Esta seguro que desea borrar el Motivo de Consulta{{ id }}?"
+            },
+            "detail": {
+                "title": "Motivo de Consulta"
+            },
+            "description": "Descripcion",
+            "episode": "Episodio"
+        }
+    }
+}

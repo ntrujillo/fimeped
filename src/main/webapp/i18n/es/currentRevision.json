@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "currentRevision" : {
+            "home": {
+                "title": "Revisión Actual",
+                "createLabel": "Crear Revisión Actual",
+                "createOrEditLabel": "Crear o Editar Revisión Actual"
+            },
+            "created": "Revisión Actual creada {{ param }}",
+            "updated": "Revisión Actual actualizada {{ param }}",
+            "deleted": "Revisión Actual eliminada {{ param }}",
+            "delete": {
+                "question": "Seguro desea borra la Revisión Actual {{ id }}?"
+            },
+            "detail": {
+                "title": "Revisión Actual"
+            },
+            "description": "Descripción",
+            "organ": "Organo",
+            "weNe": "Evidencia",
+            "episode": "Episodio"
+        }
+    }
+}

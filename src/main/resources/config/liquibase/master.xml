@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/00000000000002_added_Catalogs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831000244_added_entity_Person.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831010021_added_entity_ClinicHistory.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20151123000539_added_entity_Reservation.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831005539_added_entity_ClinicHistoryAddInf.xml" relativeToChangelogFile="false"/>  
+    <include file="classpath:config/liquibase/changelog/20150831014921_added_entity_FamilyHistory.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831015302_added_entity_PersonalHistory.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831021730_added_entity_Episode.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831022020_added_entity_Reason.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831022139_added_entity_CurrentIllness.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831022441_added_entity_CurrentRevision.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831023005_added_entity_VitalSign.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831024709_added_entity_PhysicalExam.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831024855_added_entity_Diagnostic.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831025034_added_entity_Plans.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150831025156_added_entity_EvolutionPrescription.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20151027044716_added_entity_Country.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20151027044922_added_entity_Provincia.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20151027045030_added_entity_Canton.xml" relativeToChangelogFile="false"/>
+    <!-- JHipster will add liquibase changelogs here -->
+</databaseChangeLog>

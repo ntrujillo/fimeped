@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="fimepedApp.currentRevision.detail.title">CurrentRevision</span> {{currentRevision.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.currentRevision.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{currentRevision.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.currentRevision.organ">Organ</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{currentRevision.organ}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.currentRevision.weNe">WeNe</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{currentRevision.weNe}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.currentRevision.episode">episode</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="episode.detail({id:currentRevision.episode.id})">{{currentRevision.episode.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

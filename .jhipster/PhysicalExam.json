@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "episode",
+            "otherEntityName": "episode",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "bodyPart",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "weNe",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150831024709",
+    "dto": "no",
+    "pagination": "pagination"
+}

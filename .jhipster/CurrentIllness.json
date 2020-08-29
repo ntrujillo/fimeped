@@ -1,0 +1,21 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "episode",
+            "otherEntityName": "episode",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150831022139",
+    "dto": "no",
+    "pagination": "pagination"
+}

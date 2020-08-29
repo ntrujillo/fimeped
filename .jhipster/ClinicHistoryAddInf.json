@@ -1,0 +1,107 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "clinic_add_inf",
+            "otherEntityName": "clinicHistory",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "add_inf_clinic"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "menarcheAge",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "menopauseAge",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "cycles",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "sexuallyActive",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "feat",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "deliveries",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "abortions",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "caesareans",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "livingChildren",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "lastMenarche",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "lastDelivery",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "lastCitology",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "biopsy",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "protectionMethod",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 15,
+            "fieldName": "hormoneTerapy",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 16,
+            "fieldName": "colposcopy",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 17,
+            "fieldName": "mammografhy",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 18,
+            "fieldName": "borrar",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150831005539",
+    "dto": "no",
+    "pagination": "no"
+}

@@ -1,0 +1,108 @@
+<div>
+
+    <h2 translate="fimepedApp.clinicHistoryAddInf.home.title">ClinicHistoryAddInfs</h2>
+    <jh-alert></jh-alert>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" ui-sref="clinicHistoryAddInf.new">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="fimepedApp.clinicHistoryAddInf.home.createLabel">Create a new ClinicHistoryAddInf</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteClinicHistoryAddInfConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(clinicHistoryAddInf.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="fimepedApp.clinicHistoryAddInf.delete.question" translate-values="{id: '{{clinicHistoryAddInf.id}}'}">Are you sure you want to delete this ClinicHistoryAddInf?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="global.field.id">ID</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.menarcheAge">MenarcheAge</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.menopauseAge">MenopauseAge</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.cycles">Cycles</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.sexuallyActive">SexuallyActive</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.feat">Feat</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.deliveries">Deliveries</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.abortions">Abortions</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.caesareans">Caesareans</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.livingChildren">LivingChildren</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.lastMenarche">LastMenarche</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.lastDelivery">LastDelivery</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.lastCitology">LastCitology</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.biopsy">Biopsy</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.protectionMethod">ProtectionMethod</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.hormoneTerapy">HormoneTerapy</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.colposcopy">Colposcopy</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.mammografhy">Mammografhy</th>
+                    <th translate="fimepedApp.clinicHistoryAddInf.borrar">Borrar</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="clinicHistoryAddInf in clinicHistoryAddInfs">
+                    <td><a ui-sref="clinicHistoryAddInf.detail({id:clinicHistoryAddInf.id})">{{clinicHistoryAddInf.id}}</a></td>
+                    <td>{{clinicHistoryAddInf.menarcheAge}}</td>
+                    <td>{{clinicHistoryAddInf.menopauseAge}}</td>
+                    <td>{{clinicHistoryAddInf.cycles}}</td>
+                    <td>{{clinicHistoryAddInf.sexuallyActive}}</td>
+                    <td>{{clinicHistoryAddInf.feat}}</td>
+                    <td>{{clinicHistoryAddInf.deliveries}}</td>
+                    <td>{{clinicHistoryAddInf.abortions}}</td>
+                    <td>{{clinicHistoryAddInf.caesareans}}</td>
+                    <td>{{clinicHistoryAddInf.livingChildren}}</td>
+                    <td>{{clinicHistoryAddInf.lastMenarche}}</td>
+                    <td>{{clinicHistoryAddInf.lastDelivery}}</td>
+                    <td>{{clinicHistoryAddInf.lastCitology}}</td>
+                    <td>{{clinicHistoryAddInf.biopsy}}</td>
+                    <td>{{clinicHistoryAddInf.protectionMethod}}</td>
+                    <td>{{clinicHistoryAddInf.hormoneTerapy}}</td>
+                    <td>{{clinicHistoryAddInf.colposcopy}}</td>
+                    <td>{{clinicHistoryAddInf.mammografhy}}</td>
+                    <td>{{clinicHistoryAddInf.borrar}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="clinicHistoryAddInf.detail({id:clinicHistoryAddInf.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ui-sref="clinicHistoryAddInf.edit({id:clinicHistoryAddInf.id})"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(clinicHistoryAddInf.id)"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

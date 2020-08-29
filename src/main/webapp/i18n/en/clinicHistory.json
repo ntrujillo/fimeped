@@ -1,0 +1,26 @@
+{
+    "fimepedApp": {
+        "clinicHistory" : {
+            "home": {
+                "title": "ClinicHistorys",
+                "createLabel": "Create a new ClinicHistory",
+                "createOrEditLabel": "Create or edit a ClinicHistory"
+            },
+            "created": "A new ClinicHistory is created with identifier {{ param }}",
+            "updated": "A ClinicHistory is updated with identifier {{ param }}",
+            "deleted": "A ClinicHistory is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete ClinicHistory {{ id }}?"
+            },
+            "detail": {
+                "title": "ClinicHistory"
+            },
+            "createDate": "CreateDate",
+            "clinic_add_inf": "Clinic_add_inf",
+            "person": "Person",
+            "clinic_episode": "Clinic_episode",
+            "clinic_personal": "Clinic_personal",
+            "clinic_family": "Clinic_family"
+        }
+    }
+}

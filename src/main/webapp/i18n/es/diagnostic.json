@@ -1,0 +1,29 @@
+{
+    "fimepedApp": {
+        "diagnostic" : {
+            "home": {
+                "title": "Diagnósticos",
+                "createLabel": "Crear Diagnóstico",
+                "createOrEditLabel": "Crear o Editar Diagnóstico"
+            },
+            "modalView":{
+            	"title":"CIE 10",
+            	"code":"Código",
+            	"description":"Descripción"            	
+            },
+            "created": "Nuevo registro creado {{ param }}",
+            "updated": "Registro actualizado{{ param }}",
+            "deleted": "Registro eliminado {{ param }}",
+            "delete": {
+                "question": "Seguro desea borrar el diagnósitco{{ id }}?"
+            },
+            "detail": {
+                "title": "Diagnóstico"
+            },
+            "description": "Descripción",
+            "cie": "CIE",
+            "preDef": "Pre-Def",
+            "episode": "Episodio"
+        }
+    }
+}

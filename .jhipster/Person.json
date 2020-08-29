@@ -1,0 +1,196 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "clinicHistory",
+            "otherEntityName": "clinicHistory",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "clinicHistory"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "systemInstitution",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "operatingUnit",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "operatingUnitCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "personType",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "personFaculty",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "personCareer",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "personSemester",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "secondName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "paternalSurname",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "maternalSurname",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "cedula",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "phone",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 15,
+            "fieldName": "birthDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldId": 16,
+            "fieldName": "birthPlace",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 17,
+            "fieldName": "nationality",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 18,
+            "fieldName": "age",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 19,
+            "fieldName": "gender",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 20,
+            "fieldName": "maritalStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 21,
+            "fieldName": "approvedInstructionYear",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 22,
+            "fieldName": "admissionDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldId": 23,
+            "fieldName": "occupation",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 24,
+            "fieldName": "companyWork",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 25,
+            "fieldName": "insuranceType",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 26,
+            "fieldName": "referred",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 27,
+            "fieldName": "kinshipName",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 28,
+            "fieldName": "kinship",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 29,
+            "fieldName": "kinshipAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 30,
+            "fieldName": "kinshipPhone",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 31,
+            "fieldName": "neighborhood",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 32,
+            "fieldName": "parroquia",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 33,
+            "fieldName": "canton",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 34,
+            "fieldName": "provincia",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 35,
+            "fieldName": "zone",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 36,
+            "fieldName": "culturalGroup",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150831000244",
+    "dto": "no",
+    "pagination": "no"
+}

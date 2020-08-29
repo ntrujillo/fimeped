@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="fimepedApp.diagnostic.detail.title">Diagnostic</span> {{diagnostic.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.diagnostic.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{diagnostic.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.diagnostic.cie">Cie</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{diagnostic.cie}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.diagnostic.preDef">PreDef</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{diagnostic.preDef}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.diagnostic.episode">episode</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="episode.detail({id:diagnostic.episode.id})">{{diagnostic.episode.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

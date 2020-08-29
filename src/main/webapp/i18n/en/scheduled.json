@@ -1,0 +1,13 @@
+{
+    "fimepedApp": {
+    	"scheduled": {
+    	 "title": "Scheduled Dates",
+    	 "turn":"Turn",
+    	 "date":"Date",
+    	 "firstName":"Name",
+    	 "paternalSurname" :"Paternal Surname",
+    	 "status" :"Status" 	 
+    	}  
+              
+    }
+}

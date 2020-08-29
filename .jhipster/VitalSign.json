@@ -1,0 +1,61 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "episode",
+            "otherEntityName": "episode",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "bloodPressure",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "heartRate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "breathingFrecuency",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "oralTemperature",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "axillaryTemperature",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "weight",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "size",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "headCircumference",
+            "fieldType": "Double"
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "bodyMass",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20150831023005",
+    "dto": "no",
+    "pagination": "pagination"
+}

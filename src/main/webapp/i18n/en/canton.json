@@ -1,0 +1,22 @@
+{
+    "fimepedApp": {
+        "canton" : {
+            "home": {
+                "title": "Cantons",
+                "createLabel": "Create a new Canton",
+                "createOrEditLabel": "Create or edit a Canton"
+            },
+            "created": "A new Canton is created with identifier {{ param }}",
+            "updated": "A Canton is updated with identifier {{ param }}",
+            "deleted": "A Canton is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Canton {{ id }}?"
+            },
+            "detail": {
+                "title": "Canton"
+            },
+            "name": "Name",
+            "provincia": "Provincia"
+        }
+    }
+}

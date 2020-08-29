@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reason" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8ef59fe4-270f-4ac9-b6e9-79c078dbdb2d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="REPORT_TITLE" class="java.lang.String" isForPrompting="false"/>
+	<field name="date" class="java.util.Date"/>
+	<field name="evolution" class="java.lang.String"/>
+	<field name="prescription" class="java.lang.String"/>
+	<field name="medicines" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="4" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c245833b-799f-4a16-8962-35f70a6dc330" mode="Opaque" x="0" y="2" width="59" height="30" backcolor="#FFCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="18c77d9c-01e9-4a26-996d-655e0622fc80" mode="Opaque" x="59" y="2" width="220" height="15" backcolor="#FFCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[EVOLUCION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="16f382f6-3f0f-44a4-97c9-025b8f1fa354" mode="Opaque" x="279" y="2" width="220" height="15" backcolor="#FFCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[PRESCRIPCIONES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d978bcd1-7ab9-492e-9fc0-f354fa667d94" mode="Opaque" x="499" y="2" width="45" height="30" backcolor="#FFCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[MEDICAMENTOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="83eff546-d3cc-40cc-9dea-80abd0ac016a" mode="Opaque" x="59" y="17" width="220" height="15" backcolor="#CCFFCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[FIRMAR AL PIE DE CADA NOTA DE EVOLUCION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9521223e-097e-40cd-8404-7196022110a5" mode="Opaque" x="279" y="17" width="220" height="15" backcolor="#CCFFCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[FIRMAR AL PIE DE CADA CONJUNTO DE PRESCIRPSCIONES]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="4" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement uuid="358d8287-b9ca-460d-8404-c2f59b51e800" x="0" y="2" width="59" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="61cfa782-d350-479e-bf1a-71e56ac6bcd0" x="279" y="0" width="220" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{prescription}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6ed52627-d51d-4fef-9e96-5f08b1b7a3a3" x="499" y="0" width="45" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{medicines}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0308e772-def9-4270-a09f-5ce145bc439a" x="59" y="0" width="220" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{evolution}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="3" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="3" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="3" splitType="Stretch"/>
+	</summary>
+</jasperReport>

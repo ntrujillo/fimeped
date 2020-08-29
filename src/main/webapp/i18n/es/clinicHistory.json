@@ -1,0 +1,26 @@
+{
+    "fimepedApp": {
+        "clinicHistory" : {
+            "home": {
+                "title": "Historias Clínicas",
+                "createLabel": "Crear Historia",
+                "createOrEditLabel": "Crear or Editar Historia"
+            },
+            "created": "Historia Clínica creada {{ param }}",
+            "updated": "Historia Clínica actualizada {{ param }}",
+            "deleted": "Historia Clínica eliminada {{ param }}",
+            "delete": {
+                "question": "Está seguro que desea borrar la  Historia Clínica {{ id }}?"
+            },
+            "detail": {
+                "title": "Historia Clínica"
+            },
+            "createDate": "Fecha Creación",
+            "clinic_add_inf": "Inf. Adicional",
+            "person": "Persona",
+            "clinic_episode": "Episodio",
+            "clinic_personal": "Personal",
+            "clinic_family": "Familiar"
+        }
+    }
+}

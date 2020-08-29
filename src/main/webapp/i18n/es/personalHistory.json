@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "personalHistory" : {
+            "home": {
+                "title": "Antecedentes Personales",
+                "createLabel": "Crear Antecedente Personal",
+                "createOrEditLabel": "Crear o editar Antecedente Personal"
+            },
+            "created": "Un nuevo Antecedente Personal es creado con id {{ param }}",
+            "updated": "Un Antecedente Personal es actualizado con id {{ param }}",
+            "deleted": "Un Antecedente Personal es borrado con id {{ param }}",
+            "delete": {
+                "question": "Está seguro que desea borra el Antecedente Personal {{ id }}?"
+            },
+            "detail": {
+                "title": "Antecedente Personal"
+            },
+            "date": "Fecha",
+            "description": "Descripción",
+            "illness": "Enfermedad",
+            "clinic_history": "Historia Clínica"
+        }
+    }
+}

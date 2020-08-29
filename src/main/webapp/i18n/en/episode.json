@@ -1,0 +1,32 @@
+{
+    "fimepedApp": {
+        "episode" : {
+            "home": {
+                "title": "Episodes",
+                "createLabel": "Create a new Episode",
+                "createOrEditLabel": "Create or edit a Episode"
+            },
+            "created": "A new Episode is created with identifier {{ param }}",
+            "updated": "A Episode is updated with identifier {{ param }}",
+            "deleted": "A Episode is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Episode {{ id }}?"
+            },
+            "detail": {
+                "title": "Episode"
+            },
+            "date": "Date",
+            "description": "Description",
+            "user": "User",
+            "clinic_history": "Clinic_history",
+            "reason": "Reason",
+            "current_illness": "Current_illness",
+            "current_revision": "Current_revision",
+            "vital_sign": "Vital_sign",
+            "physical_exam": "Physical_exam",
+            "diagnostic": "Diagnostic",
+            "plan": "Plan",
+            "evolution_prescription": "Evolution_prescription"
+        }
+    }
+}

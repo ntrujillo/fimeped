@@ -1,0 +1,161 @@
+<div>	
+		<fieldset>
+			<legend>Datos Generales:</legend>
+			<div class="row">
+				<div class="col-xs-12 col-md-3">
+
+					<label for="codigo">Codigo:</label> <input id="codigo"
+						class="form-control" type="text" data-ng-model="person.id"></input>
+				</div>
+				<div class="col-xs-12 col-md-3">
+
+					<label for="historia">Historia Clinica:</label> <input
+						id="historia" class="form-control" type="text"
+						data-ng-model="clinicHistory.id"></input>
+				</div>
+				<div class="col-xs-12 col-md-3">
+
+					<label for="genero">Genero:</label> <select class="form-control"
+						id="combo-genero" data-ng-model="person.gender"
+						data-ng-options="g.code as g.value for g in catalogGender">
+
+					</select>
+				</div>
+				<div class="col-xs-12 col-md-3">
+
+					<label for="cedula">Cedula:</label> <input id="cedula"
+						class="form-control" type="text" ng-model="person.cedula"></input>
+				</div>
+				<div class="col-xs-12 col-md-3">
+
+					<label for="apellidoPaterno">Apellido Paterno:</label> <input
+						id="apellidoPaterno" class="form-control" type="text"
+						data-ng-model="person.paternalSurname"></input>
+				</div>
+				<div class="col-xs-12 col-md-3">
+
+					<label for="apellidoMaterno">Apellido Materno:</label> <input
+						id="apellidoMaterno" class="form-control" type="text"
+						ng-model="person.maternalSurname"></input>
+				</div>
+				<div class="col-xs-12 col-md-3">
+
+					<label for="primerNombre">Primer Nombre:</label> <input
+						id="primerNombre" class="form-control" type="text"
+						ng-model="person.firstName"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="segundoNombre">Segundo Nombre:</label> <input
+						id="segundoNombre" class="form-control" type="text"
+						ng-model="person.secondName"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="fechaNacimiento">Fecha Nacimiento:</label> 
+					<input id="fechaNacimiento" type = 'date' class="form-control" 						
+						ng-model="person.birthDate"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="edad">Edad:</label> <input id="edad"
+						class="form-control" type="text" ng-model="person.age"></input>
+				</div>
+			</div>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>Direccion:</legend>
+			<div class="row">
+				<div class="col-xs-12 col-md-3">
+
+					<label for="pais">Pais:</label> <select class="form-control"
+						id="combo-pais" ng-model="codigoPais"
+						ng-options="p.id as p.name for p in catalogCountry"
+						ng-change="onChangePais(codigoPais)">
+						<!--<option value="">--{{'FINPM.DLB_FINPM_SELECIEML_80672'|translate}}--</option>-->
+					</select>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="provincia">Provincia:</label> <select
+						class="form-control" id="combo-provincia"
+						ng-model="codigoProvincia"
+						ng-options="p.id as p.name for p in catalogProvincia"
+						ng-change="onChangeProvincia(codigoProvincia)"
+						ng-disabled="catalogProvincia.length===0">
+						<!--<option value="">--{{'FINPM.DLB_FINPM_SELECIEML_80672'|translate}}--</option>-->
+					</select>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="canton">Canton:</label> <select class="form-control"
+						id="combo-canton" ng-model="person.canton"
+						ng-options="c.id as c.name for c in catalogCanton"
+						ng-disabled="catalogCanton.length===0">
+						<!--<option value="">--{{'FINPM.DLB_FINPM_SELECIEML_80672'|translate}}--</option>-->
+					</select>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="parroquia">Parroquia:</label> <input id="parroquia"
+						class="form-control" type="text"
+						data-ng-model="person.parroquia"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-6">
+
+					<label for="direccion">Direccion:</label> <input id="direccion"
+						class="form-control" type="text"
+						data-ng-model="person.address"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="telefono">Telefono:</label> <input id="telefono"
+						class="form-control" type="text" data-ng-model="person.phone"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="email">Email:</label> <input id="email"
+						class="form-control" type="text" data-ng-model="person.email"></input>
+				</div>
+
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Informacion Adicional:</legend>
+			<div class="row">
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="birthPlace">Luga de Nacimiento:</label> <input
+						id="birthPlace" class="form-control" type="text"
+						data-ng-model="person.birthPlace"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="personType">Tipo de Persona:</label> <input
+						id="personType" class="form-control" type="text"
+						data-ng-model="person.personType"></input>
+				</div>
+
+				<div class="col-xs-12 col-md-3">
+
+					<label for="primeraConsulta">Primera Consulta:</label> 
+					<input	id="primeraConsulta" type = "date" class="form-control" 					
+						data-ng-model="person.admissionDate"></input>
+				</div>
+
+			</div>
+		</fieldset>
+</div>

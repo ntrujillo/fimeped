@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "evolutionPrescription" : {
+            "home": {
+                "title": "EvolutionPrescriptions",
+                "createLabel": "Create a new EvolutionPrescription",
+                "createOrEditLabel": "Create or edit a EvolutionPrescription"
+            },
+            "created": "A new EvolutionPrescription is created with identifier {{ param }}",
+            "updated": "A EvolutionPrescription is updated with identifier {{ param }}",
+            "deleted": "A EvolutionPrescription is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete EvolutionPrescription {{ id }}?"
+            },
+            "detail": {
+                "title": "EvolutionPrescription"
+            },
+            "evolution": "Evolution",
+            "prescription": "Prescription",
+            "medicines": "Medicines",
+            "episode": "Episode"
+        }
+    }
+}

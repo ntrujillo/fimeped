@@ -1,0 +1,32 @@
+{
+    "fimepedApp": {
+        "vitalSign" : {
+            "home": {
+                "title": "Signos Vitales",
+                "createLabel": "Nuevo Signo Vital",
+                "createOrEditLabel": "Crear o Editar un Signo Vital"
+            },
+            "created": "A new VitalSign is created with identifier {{ param }}",
+            "updated": "A VitalSign is updated with identifier {{ param }}",
+            "deleted": "A VitalSign is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Esta seguro de querer borar los Signos Vitales {{ id }}?"
+            },
+            "detail": {
+                "title": "Signos Vitales"
+            },
+            "bloodPressure": "Presion Arterial",
+            "heartRate": "Frecuencia Cardiaca (min)",
+            "breathingFrecuency": "Frecuencia Respiratoria (min)",
+            "oralTemperature": "Temperatura Oral (C)",
+            "axillaryTemperature": "Temperatura Axilar (C)",
+            "weight": "Peso (Kg)",
+            "size": "Altura (cm)",
+            "headCircumference": "Circunferencia Cefálica (cm)",
+            "bodyMass": "Masa Corporal",
+            "episode": "Episodio",
+            "date":"Fecha",
+            "age":"Edad(meses)"
+        }
+    }
+}

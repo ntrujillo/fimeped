@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="diagnostic" printOrder="Horizontal" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8ef59fe4-270f-4ac9-b6e9-79c078dbdb2d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="REPORT_TITLE" class="java.lang.String" isForPrompting="false"/>
+	<field name="date" class="java.util.Date"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="cie" class="java.lang.String"/>
+	<field name="catalogPreDef" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="3" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="19" splitType="Stretch">
+			<textField>
+				<reportElement uuid="abe96187-e6d7-45cd-96c0-ad3125ab16b2" mode="Opaque" x="9" y="0" width="293" height="15" backcolor="#FFFFFF"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_TITLE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="81de28e7-6ebb-41d3-827b-ec7398c80d56" mode="Opaque" x="302" y="0" width="41" height="15" backcolor="#FFFFFF"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[CIE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="46fd8384-870f-4693-ad17-34900c6f00a0" mode="Opaque" x="343" y="0" width="195" height="15" backcolor="#FFFFFF"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[PRE=PRESUNTIVO DEF = DEFINITIVO]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="1" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement uuid="358d8287-b9ca-460d-8404-c2f59b51e800" x="10" y="0" width="64" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="59bb4968-a5bc-4226-88a8-65bc3d808e4f" x="76" y="0" width="216" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eeac1d4a-69cd-4c98-9fcc-3c780b6477bb" x="301" y="0" width="50" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cie}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d93f26f7-9cbc-4eef-912e-ae4c631f7666" x="401" y="0" width="45" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{catalogPreDef}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="3" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="1" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="1" splitType="Stretch"/>
+	</summary>
+</jasperReport>

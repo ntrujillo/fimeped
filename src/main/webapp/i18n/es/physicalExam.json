@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "physicalExam" : {
+            "home": {
+                "title": "Examen Físico",
+                "createLabel": "Crear Examen Físico",
+                "createOrEditLabel": "Crear o Editar Examen Físico"
+            },
+            "created": "Examen Físico creado {{ param }}",
+            "updated": "Examen Físico actualizado {{ param }}",
+            "deleted": "Examen Físico eliminado {{ param }}",
+            "delete": {
+                "question": "Está seguro que desea eliminar el Examen Físico {{ id }}?"
+            },
+            "detail": {
+                "title": "Examen Físico"
+            },
+            "description": "Descripción",
+            "bodyPart": "Parte del Cuerpo",
+            "weNe": "Evidencia",
+            "episode": "Episodio"
+        }
+    }
+}

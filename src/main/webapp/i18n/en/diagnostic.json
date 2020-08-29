@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "diagnostic" : {
+            "home": {
+                "title": "Diagnostics",
+                "createLabel": "Create a new Diagnostic",
+                "createOrEditLabel": "Create or edit a Diagnostic"
+            },
+            "created": "A new Diagnostic is created with identifier {{ param }}",
+            "updated": "A Diagnostic is updated with identifier {{ param }}",
+            "deleted": "A Diagnostic is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Diagnostic {{ id }}?"
+            },
+            "detail": {
+                "title": "Diagnostic"
+            },
+            "description": "Description",
+            "cie": "CIE",
+            "preDef": "Pre-Def",
+            "episode": "Episode"
+        }
+    }
+}

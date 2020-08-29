@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "currentRevision" : {
+            "home": {
+                "title": "Current Revisions",
+                "createLabel": "Create a new Current Revision",
+                "createOrEditLabel": "Create or edit a Current Revision"
+            },
+            "created": "A new Current Revision is created with identifier {{ param }}",
+            "updated": "A Current Revision is updated with identifier {{ param }}",
+            "deleted": "A Current Revision is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete CurrentRevision {{ id }}?"
+            },
+            "detail": {
+                "title": "Current Revision"
+            },
+            "description": "Description",
+            "organ": "Organ",
+            "weNe": "WeNe",
+            "episode": "Episode"
+        }
+    }
+}

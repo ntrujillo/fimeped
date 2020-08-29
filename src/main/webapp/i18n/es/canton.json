@@ -1,0 +1,19 @@
+{
+    "fimepedApp": {
+        "canton" : {
+            "home": {
+                "title": "Cantones",
+                "createLabel": "Crear Cantón",
+                "createOrEditLabel": "Crear o Editar Cantón"
+            },
+            "delete": {
+                "question": "Está seguro que desea borrar el Cantón {{ id }}?"
+            },
+            "detail": {
+                "title": "Cantón"
+            },
+            "name": "Nombre",
+            "provincia": "Provincia"
+        }
+    }
+}

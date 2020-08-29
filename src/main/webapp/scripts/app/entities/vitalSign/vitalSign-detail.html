@@ -1,0 +1,102 @@
+
+<div>
+    <h2><span translate="fimepedApp.vitalSign.detail.title">VitalSign</span> {{vitalSign.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.bloodPressure">BloodPressure</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.bloodPressure}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.heartRate">HeartRate</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.heartRate}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.breathingFrecuency">BreathingFrecuency</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.breathingFrecuency}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.oralTemperature">OralTemperature</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.oralTemperature}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.axillaryTemperature">AxillaryTemperature</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.axillaryTemperature}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.weight">Weight</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.weight}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.size">Size</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.size}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.headCircumference">HeadCircumference</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.headCircumference}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.bodyMass">BodyMass</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{vitalSign.bodyMass}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.vitalSign.episode">episode</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="episode.detail({id:vitalSign.episode.id})">{{vitalSign.episode.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

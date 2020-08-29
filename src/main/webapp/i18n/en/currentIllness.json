@@ -1,0 +1,22 @@
+{
+    "fimepedApp": {
+        "currentIllness" : {
+            "home": {
+                "title": "Current Illness",
+                "createLabel": "Create a new Current Illness",
+                "createOrEditLabel": "Create or edit a Current Illness"
+            },
+            "created": "A new Current Illness is created with identifier {{ param }}",
+            "updated": "A Current Illness is updated with identifier {{ param }}",
+            "deleted": "A Current Illness is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete CurrentIllness {{ id }}?"
+            },
+            "detail": {
+                "title": "Current Illness"
+            },
+            "description": "Description",
+            "episode": "Episode"
+        }
+    }
+}

@@ -1,0 +1,73 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="GETDATE()" dbms="mssql"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql"/>
+    <property name="autoIncrement" value="false" dbms="oracle"/>
+    <property name="autoIncrement" value="true" dbms="mssql"/>
+
+    <property name="floatType" value="real" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity Person.
+    -->
+    <changeSet id="20150831000244" author="jhipster">
+        <createTable tableName="GN_PERSONA">
+            <column name="CODIGO_PER" type="bigint" autoIncrement="${autoIncrement}" >
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="INSTITUCION_SISTEMA_PER" type="varchar(255)"/>
+            <column name="UNIDAD_OPERATIVA_PER" type="varchar(255)"/>
+            <column name="COD_UO_PER" type="integer"/>
+            <column name="TIPO_PER" type="varchar(255)"/>
+            <column name="FACULTAD_PER" type="varchar(255)"/>
+            <column name="CARRERA_PER" type="varchar(255)"/>
+            <column name="SEMESTRE_PER" type="integer"/>
+            <column name="PRIMER_NOMBRE_PER" type="varchar(255)"/>
+            <column name="SEGUNDO_NOMBRE_PER" type="varchar(255)"/>
+            <column name="APELLIDO_PATERNO_PER" type="varchar(255)"/>
+            <column name="APELLIDO_MATERNO_PER" type="varchar(255)"/>
+            <column name="CEDULA_PER" type="varchar(255)"/>
+            <column name="DIRECCION_PER" type="varchar(255)"/>
+            <column name="TELEFONO_PER" type="varchar(255)"/>
+            <column name="FECHA_NACIMIENTO_PER" type="date"/>
+            <column name="LUGAR_NACIMIENTO_PER" type="varchar(255)"/>
+            <column name="NACIONALIDAD_PER" type="varchar(255)"/>
+            <column name="EDAD_PER" type="integer"/>
+            <column name="SEXO_PER" type="varchar(255)"/>
+            <column name="ESTADO_CIVIL_PER" type="varchar(255)"/>
+            <column name="INSTRUCCION_ANIO_APROBADO_PER" type="varchar(255)"/>
+            <column name="FECHA_ADMISION_PER" type="date"/>
+            <column name="OCUPACION_PER" type="varchar(255)"/>
+            <column name="EMPRESA_TRABAJA_PER" type="varchar(255)"/>
+            <column name="TIPO_SEGURO_PER" type="varchar(255)"/>
+            <column name="REFERIDO_PER" type="varchar(255)"/>
+            <column name="PARENTESCO_NOMBRE_PER" type="varchar(255)"/>
+            <column name="PARENTESCO_PER" type="varchar(255)"/>
+            <column name="DIRECCION_PARENTESCO_PER" type="varchar(255)"/>
+            <column name="TELEFONO_PARENTESCO_PER" type="varchar(255)"/>
+            <column name="BARRIO_PER" type="varchar(255)"/>
+            <column name="PARROQUIA_PER" type="varchar(255)"/>
+            <column name="CANTON_PER" type="varchar(255)"/>
+            <column name="PROVINCIA_PER" type="varchar(255)"/>
+            <column name="ZONA_PER" type="varchar(255)"/>
+            <column name="GRUPO_CULTURAL_PER" type="varchar(255)"/>
+        </createTable>        
+        
+        <ext:loadData encoding="UTF-8"
+                  file="config/liquibase/persons.csv"
+                  separator=";"
+                  tableName="GN_PERSONA"
+				  identityInsertEnabled="true">				  
+		</ext:loadData>
+        
+    </changeSet>
+</databaseChangeLog>

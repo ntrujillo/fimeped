@@ -1,0 +1,20 @@
+{
+    "fimepedApp": {
+        "provincia" : {
+            "home": {
+                "title": "Provincias",
+                "createLabel": "Create a new Provincia",
+                "createOrEditLabel": "Create or edit a Provincia"
+            },
+            "delete": {
+                "question": "Está seguro que desea borrar la Provincia {{ id }}?"
+            },
+            "detail": {
+                "title": "Provincia"
+            },
+            "name": "Nombre",
+            "country": "Pais",
+            "canton": "Cantón"
+        }
+    }
+}

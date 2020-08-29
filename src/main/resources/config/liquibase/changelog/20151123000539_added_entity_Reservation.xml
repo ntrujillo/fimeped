@@ -1,0 +1,51 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="GETDATE()" dbms="mssql"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql"/>
+    <property name="autoIncrement" value="false" dbms="oracle"/>
+    <property name="autoIncrement" value="true" dbms="mssql"/>
+
+    <property name="floatType" value="real" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity ClinicHistory.
+    -->
+    <changeSet id="20151123000539" author="jhipster">
+        <createTable tableName="TN_RESERVACION">
+            <column name="CODIGO_RES" type="bigint" autoIncrement="${autoIncrement}" >
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="CODIGO_PER" type="bigint"/>
+            <column name="CODIGO_USW" type="int"/>
+            <column name="CODIGO_ESP" type="int"/>
+            <column name="CODIGO_ETR" type="int"/>
+            <column name="FECHA_RES" type="date"/>      
+            <column name="NUM_TURNO_RES" type="int"/>               
+        </createTable>    
+
+        <addForeignKeyConstraint baseColumnNames="CODIGO_PER"
+                                 baseTableName="TN_RESERVACION"
+                                 constraintName="fk_reservation_person_id"
+                                 referencedColumnNames="CODIGO_PER"
+                                 referencedTableName="GN_PERSONA"/>
+                                 
+                                 
+        <ext:loadData encoding="UTF-8"
+                  file="config/liquibase/reservation.csv"
+                  separator=";"
+                  tableName="TN_RESERVACION" identityInsertEnabled="true">           
+            <column name="FECHA_RES" type="timestamp"/>
+        </ext:loadData>
+        <dropDefaultValue tableName="TN_RESERVACION" columnName="FECHA_RES" columnDataType="datetime"/>
+
+    </changeSet>
+</databaseChangeLog>

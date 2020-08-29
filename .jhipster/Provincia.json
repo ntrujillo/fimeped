@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "country",
+            "otherEntityName": "country",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "canton",
+            "otherEntityName": "canton",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "provincia"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20151027044922",
+    "dto": "no",
+    "pagination": "pagination"
+}

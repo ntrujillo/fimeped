@@ -1,0 +1,56 @@
+<div>
+	
+	<nav class="navbar navbar-default" role="navigation">		
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-formClinicHistory">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<div class="patient-info">
+					<span>{{clinicHistory.person.firstName}} {{clinicHistory.person.paternalSurname}}</span> <br> 
+					<span class="navbar-version">{{clinicHistory.id}}</span>
+				</div>
+			</div>			
+			<div class="collapse navbar-collapse" id="navbar-formClinicHistory">
+				
+				<ul id="navbar-fimeped" class="nav navbar-nav">				
+					<li ui-sref-active="active">
+						<a href ui-sref="fichas.form.information"> 
+						<span class="glyphicon glyphicon-user"></span> 
+						<span translate="fimepedApp.form.lbl_information">Informacion Personal</span>
+						</a>
+					</li>
+					<li ui-sref-active="active">
+						<a href ui-sref="fichas.form.family_history"> 
+						<span class="glyphicon glyphicon-list-alt"></span> 
+						<span translate="fimepedApp.form.lbl_family_history">Antecedentes Familiares</span>	
+						</a>
+					</li>
+					<li ui-sref-active="active">
+						<a href ui-sref="fichas.form.personal_history"> 
+						<span class="glyphicon glyphicon-list"></span> 
+						<span translate="fimepedApp.form.lbl_personal_history">Antecedentes Personales</span>	
+						</a>
+					</li>
+					<li ui-sref-active="active">
+						<a href ui-sref="fichas.form.history({episodeId:$root.episode.id})"> 
+						<span class="glyphicon glyphicon-paste"></span> 
+						<span translate="fimepedApp.form.lbl_clinic_history">Historia Clinica</span>	
+						</a>
+					</li>
+					<li ui-sref-active="active">
+						<a href ui-sref="fichas.form.graphics">
+								<span class="glyphicon glyphicon-stats"></span> 
+								<span translate="fimepedApp.form.lbl_graphics">Graficas</span>
+						</a>
+					</li>					
+				</ul>
+			</div>	 
+	</nav>	
+	
+	<div ui-view="content.form"></div>
+		
+</div>	
+	

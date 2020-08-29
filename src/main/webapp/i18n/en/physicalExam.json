@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "physicalExam" : {
+            "home": {
+                "title": "Physical Exams",
+                "createLabel": "Create a new Physical Exam",
+                "createOrEditLabel": "Create or edit a Physical Exam"
+            },
+            "created": "A new Physical Exam is created with identifier {{ param }}",
+            "updated": "A Physical Exam is updated with identifier {{ param }}",
+            "deleted": "A Physical Exam is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Physical Exam {{ id }}?"
+            },
+            "detail": {
+                "title": "Physical Exam"
+            },
+            "description": "Description",
+            "bodyPart": "Body Part",
+            "weNe": "Evidence",
+            "episode": "Episode"
+        }
+    }
+}

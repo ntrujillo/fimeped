@@ -1,0 +1,55 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myEvolutionPrescriptionLabel" translate="fimepedApp.evolutionPrescription.home.createOrEditLabel">Create or edit a EvolutionPrescription</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="evolutionPrescription.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="fimepedApp.evolutionPrescription.evolution" for="field_evolution">Evolution</label>
+            <input type="text" class="form-control" name="evolution" id="field_evolution"
+                    ng-model="evolutionPrescription.evolution"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.evolutionPrescription.prescription" for="field_prescription">Prescription</label>
+            <input type="text" class="form-control" name="prescription" id="field_prescription"
+                    ng-model="evolutionPrescription.prescription"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.evolutionPrescription.medicines" for="field_medicines">Medicines</label>
+            <input type="text" class="form-control" name="medicines" id="field_medicines"
+                    ng-model="evolutionPrescription.medicines"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.evolutionPrescription.episode" for="field_episode">episode</label>
+            
+            <select class="form-control" id="field_episode" name="episode" ng-model="evolutionPrescription.episode" ng-options="episode as episode.id for episode in episodes track by episode.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="generic-record" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8ef59fe4-270f-4ac9-b6e9-79c078dbdb2d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="REPORT_TITLE" class="java.lang.String" isForPrompting="false"/>
+	<field name="date" class="java.util.Date"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="organ" class="java.lang.String"/>
+	<field name="weNe" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="722f3ae1-9703-4431-89bb-78db315cd3c2" mode="Opaque" x="9" y="3" width="263" height="15" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_TITLE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="47c37461-9936-40df-b089-a73eac52f81b" x="272" y="3" width="124" height="15"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[CP = CON EVIDENCIA DE PATOLOGIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f5b18fae-e045-4268-a965-4cb2e72879fe" x="396" y="3" width="138" height="15"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[SP = SIN EVIDENCIA DE PATOLOGIA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="3" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<textField>
+				<reportElement uuid="358d8287-b9ca-460d-8404-c2f59b51e800" x="9" y="3" width="64" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="59bb4968-a5bc-4226-88a8-65bc3d808e4f" stretchType="RelativeToBandHeight" x="139" y="3" width="396" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c2d0fdd8-9350-4ea7-a80c-d91402530383" x="73" y="3" width="35" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{organ}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a3619dd7-70d5-4a9e-a504-6fd87c6ae5b2" x="108" y="3" width="31" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{weNe}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="4" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="3" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="4" splitType="Stretch"/>
+	</summary>
+</jasperReport>

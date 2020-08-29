@@ -1,0 +1,20 @@
+{
+    "fimepedApp": {
+        "country" : {
+            "home": {
+                "title": "Paises",
+                "createLabel": "Crear Pais",
+                "createOrEditLabel": "Crear o Editar Pais"
+            },
+            "delete": {
+                "question": "Está seguro de querer eliminar el Pais {{ id }}?"
+            },
+            "detail": {
+                "title": "Pais"
+            },
+            "name": "Nombre",
+            "nacionality": "Nacionalidad",
+            "pais_provincia": "Provincia"
+        }
+    }
+}

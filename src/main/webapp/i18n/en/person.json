@@ -1,0 +1,57 @@
+{
+    "fimepedApp": {
+        "person" : {
+            "home": {
+                "title": "Persons",
+                "createLabel": "Create a new Person",
+                "createOrEditLabel": "Create or edit a Person"
+            },
+            "created": "A new Person is created with identifier {{ param }}",
+            "updated": "A Person is updated with identifier {{ param }}",
+            "deleted": "A Person is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Person {{ id }}?"
+            },
+            "detail": {
+                "title": "Person"
+            },
+            "systemInstitution": "SystemInstitution",
+            "operatingUnit": "OperatingUnit",
+            "operatingUnitCode": "OperatingUnitCode",
+            "personType": "PersonType",
+            "personFaculty": "PersonFaculty",
+            "personCareer": "PersonCareer",
+            "personSemester": "PersonSemester",
+            "firstName": "FirstName",
+            "secondName": "SecondName",
+            "paternalSurname": "PaternalSurname",
+            "maternalSurname": "MaternalSurname",
+            "cedula": "Cedula",
+            "address": "Address",
+            "phone": "Phone",
+            "birthDate": "BirthDate",
+            "birthPlace": "BirthPlace",
+            "nationality": "Nationality",
+            "age": "Age",
+            "gender": "Gender",
+            "maritalStatus": "MaritalStatus",
+            "approvedInstructionYear": "ApprovedInstructionYear",
+            "admissionDate": "AdmissionDate",
+            "occupation": "Occupation",
+            "companyWork": "CompanyWork",
+            "insuranceType": "InsuranceType",
+            "referred": "Referred",
+            "kinshipName": "KinshipName",
+            "kinship": "Kinship",
+            "kinshipAddress": "KinshipAddress",
+            "kinshipPhone": "KinshipPhone",
+            "neighborhood": "Neighborhood",
+            "parroquia": "Parroquia",
+            "canton": "Canton",
+            "provincia": "Provincia",
+            "zone": "Zone",
+            "culturalGroup": "CulturalGroup",
+            "clinicHistory": "ClinicHistory"
+        }
+    }
+}

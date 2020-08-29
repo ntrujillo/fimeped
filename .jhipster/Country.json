@@ -1,0 +1,29 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "pais_provincia",
+            "otherEntityName": "provincia",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "country"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "nacionality",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20151027044716",
+    "dto": "no",
+    "pagination": "pagination"
+}

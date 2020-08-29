@@ -1,0 +1,22 @@
+{
+    "fimepedApp": {
+        "currentIllness" : {
+            "home": {
+                "title": "Enfermedad Actual",
+                "createLabel": "Crear Enfermedad Actual",
+                "createOrEditLabel": "Crear o Editar Enfermedad Actual"
+            },
+            "created": "Nuevo registro creado {{ param }}",
+            "updated": "Registro actualizado {{ param }}",
+            "deleted": "Registro eliminado {{ param }}",
+            "delete": {
+                "question": "Seguro desea borrar el registro {{ id }}?"
+            },
+            "detail": {
+                "title": "Enfermedad Actual"
+            },
+            "description": "Descripción",
+            "episode": "Episodio"
+        }
+    }
+}

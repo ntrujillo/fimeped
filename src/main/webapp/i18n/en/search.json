@@ -1,0 +1,13 @@
+{
+    "fimepedApp": {
+        "search" : {
+            "title" : "Find Clinic History",
+            "lbl_first_name":"First Name",
+            "lbl_second_name":"Second Name",
+            "lbl_paternal_surname":"Paternal Surname",
+            "lbl_maternal_surname":"Maternal Surname",
+            "lbl_cedula":"Cedula",
+            "plh_search":"Search"
+        }
+    }
+}

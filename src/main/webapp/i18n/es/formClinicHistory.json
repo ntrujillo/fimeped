@@ -1,0 +1,46 @@
+{
+    "fimepedApp": {
+        "form" : {
+            "title" : "Historia Clinica",
+            "lbl_information":"Información Personal",
+            "lbl_clinic_history":"Historia Clinica",
+            "lbl_graphics":"Graficas",
+            "lbl_episodes":"Episodios",
+            "lbl_personal_history":"Antecedentes Personales",
+            "lbl_family_history" : "Antecedentes Familiares"                   
+        },
+        "sheet" : {        	
+        	"lbl_code":"Código",
+        	"lbl_date":"Fecha",
+        	"lbl_reason" : "Motivo de Consulta" ,
+        	"lbl_personal_history" : "Antecedentes Personales",
+        	"lbl_family_history" : "Antecedentes Familiares",
+        	"lbl_current_illness" : "Enfermedad Actual",
+        	"lbl_current_revision" : "Revision Actual",
+        	"lbl_vital_sign" : "Signos Vitales",
+        	"lbl_physical_exam" : "Examen Fisico",
+        	"lbl_diagnostic" : "Diagnosticos",
+        	"lbl_plan" : "Planes",
+        	"lbl_evolution_prescription" : "Evolución y Prescripciones",
+        	"lbl_new_episode":"Nuevo Episodio",
+        	"lbl_find_episode":"Buscar Episodio",
+        	"lbl_print_episode":"Imprimir"
+        },        
+        "graphics" : {
+        	"lbl_head_circunference":"Circunferencia Cefálica",
+            "lbl_length_height":"Longitud - Estatura",
+            "lbl_weight":"Peso",
+            "lbl_graphic":"Gráfica"
+            
+        },
+        "episodes" : {
+        	"title" : "Buscar Episodio",
+            "lbl_id":"Id",
+            "lbl_date":"Fecha",
+            "lbl_date_start":"Desde",
+            "lbl_date_end":"Hasta",
+            "lbl_cancel":"Cancelar"                    
+        }
+        
+    }
+}

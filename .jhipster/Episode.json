@@ -1,0 +1,89 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "clinic_history",
+            "otherEntityName": "clinicHistory",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "reason",
+            "otherEntityName": "reason",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "reason"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "current_illness",
+            "otherEntityName": "currentIllness",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "current_illness"
+        },
+        {
+            "relationshipId": 5,
+            "relationshipName": "current_revision",
+            "otherEntityName": "currentRevision",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "current_revision"
+        },
+        {
+            "relationshipId": 6,
+            "relationshipName": "vital_sign",
+            "otherEntityName": "vitalSign",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "vital_sign"
+        },
+        {
+            "relationshipId": 7,
+            "relationshipName": "physical_exam",
+            "otherEntityName": "physicalExam",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "physical_exam"
+        },
+        {
+            "relationshipId": 8,
+            "relationshipName": "diagnostic",
+            "otherEntityName": "diagnostic",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "diagnostic"
+        },
+        {
+            "relationshipId": 9,
+            "relationshipName": "plan",
+            "otherEntityName": "plan",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "plan"
+        },
+        {
+            "relationshipId": 10,
+            "relationshipName": "evolution_prescription",
+            "otherEntityName": "evolutionPrescription",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "evolution_prescription"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "date",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20150831021730",
+    "dto": "no",
+    "pagination": "pagination"
+}

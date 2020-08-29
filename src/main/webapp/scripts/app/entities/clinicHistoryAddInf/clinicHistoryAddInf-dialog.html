@@ -1,0 +1,152 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myClinicHistoryAddInfLabel" translate="fimepedApp.clinicHistoryAddInf.home.createOrEditLabel">Create or edit a ClinicHistoryAddInf</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="clinicHistoryAddInf.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.menarcheAge" for="field_menarcheAge">MenarcheAge</label>
+            <input type="number" class="form-control" name="menarcheAge" id="field_menarcheAge"
+                    ng-model="clinicHistoryAddInf.menarcheAge"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.menopauseAge" for="field_menopauseAge">MenopauseAge</label>
+            <input type="number" class="form-control" name="menopauseAge" id="field_menopauseAge"
+                    ng-model="clinicHistoryAddInf.menopauseAge"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.cycles" for="field_cycles">Cycles</label>
+            <input type="number" class="form-control" name="cycles" id="field_cycles"
+                    ng-model="clinicHistoryAddInf.cycles"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.sexuallyActive" for="field_sexuallyActive">SexuallyActive</label>
+            <input type="text" class="form-control" name="sexuallyActive" id="field_sexuallyActive"
+                    ng-model="clinicHistoryAddInf.sexuallyActive"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.feat" for="field_feat">Feat</label>
+            <input type="number" class="form-control" name="feat" id="field_feat"
+                    ng-model="clinicHistoryAddInf.feat"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.deliveries" for="field_deliveries">Deliveries</label>
+            <input type="number" class="form-control" name="deliveries" id="field_deliveries"
+                    ng-model="clinicHistoryAddInf.deliveries"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.abortions" for="field_abortions">Abortions</label>
+            <input type="number" class="form-control" name="abortions" id="field_abortions"
+                    ng-model="clinicHistoryAddInf.abortions"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.caesareans" for="field_caesareans">Caesareans</label>
+            <input type="number" class="form-control" name="caesareans" id="field_caesareans"
+                    ng-model="clinicHistoryAddInf.caesareans"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.livingChildren" for="field_livingChildren">LivingChildren</label>
+            <input type="number" class="form-control" name="livingChildren" id="field_livingChildren"
+                    ng-model="clinicHistoryAddInf.livingChildren"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.lastMenarche" for="field_lastMenarche">LastMenarche</label>
+            <input type="date" class="form-control" name="lastMenarche" id="field_lastMenarche"
+                    ng-model="clinicHistoryAddInf.lastMenarche"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.lastDelivery" for="field_lastDelivery">LastDelivery</label>
+            <input type="date" class="form-control" name="lastDelivery" id="field_lastDelivery"
+                    ng-model="clinicHistoryAddInf.lastDelivery"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.lastCitology" for="field_lastCitology">LastCitology</label>
+            <input type="date" class="form-control" name="lastCitology" id="field_lastCitology"
+                    ng-model="clinicHistoryAddInf.lastCitology"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.biopsy" for="field_biopsy">Biopsy</label>
+            <input type="text" class="form-control" name="biopsy" id="field_biopsy"
+                    ng-model="clinicHistoryAddInf.biopsy"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.protectionMethod" for="field_protectionMethod">ProtectionMethod</label>
+            <input type="text" class="form-control" name="protectionMethod" id="field_protectionMethod"
+                    ng-model="clinicHistoryAddInf.protectionMethod"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.hormoneTerapy" for="field_hormoneTerapy">HormoneTerapy</label>
+            <input type="text" class="form-control" name="hormoneTerapy" id="field_hormoneTerapy"
+                    ng-model="clinicHistoryAddInf.hormoneTerapy"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.colposcopy" for="field_colposcopy">Colposcopy</label>
+            <input type="text" class="form-control" name="colposcopy" id="field_colposcopy"
+                    ng-model="clinicHistoryAddInf.colposcopy"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.mammografhy" for="field_mammografhy">Mammografhy</label>
+            <input type="text" class="form-control" name="mammografhy" id="field_mammografhy"
+                    ng-model="clinicHistoryAddInf.mammografhy"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="fimepedApp.clinicHistoryAddInf.borrar" for="field_borrar">Borrar</label>
+            <input type="text" class="form-control" name="borrar" id="field_borrar"
+                    ng-model="clinicHistoryAddInf.borrar"
+                    >
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

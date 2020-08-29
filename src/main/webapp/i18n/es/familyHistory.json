@@ -1,0 +1,24 @@
+{
+    "fimepedApp": {
+        "familyHistory" : {
+            "home": {
+                "title": "Antecedentes Familiares",
+                "createLabel": "Crear Antecedente Familiar",
+                "createOrEditLabel": "Crear o Editar Antecedente Familiar"
+            },
+            "created": "Antecedente Familiar creado {{ param }}",
+            "updated": "Antecedente Familiar actualizado {{ param }}",
+            "deleted": "Antecedente Familiar eliminado {{ param }}",
+            "delete": {
+                "question": "Seguro desea borrar el Antecendente Familiar {{ id }}?"
+            },
+            "detail": {
+                "title": "Antecedente Familiar"
+            },
+            "date": "Fecha",
+            "description": "Descripción",
+            "illness": "Enfermedad",
+            "clinic_history": "Historia Clínica"
+        }
+    }
+}

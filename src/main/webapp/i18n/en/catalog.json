@@ -1,0 +1,26 @@
+{
+    "fimepedApp": {
+        "catalog" : {
+            "home": {
+                "title": "Records",
+                "createLabel": "Create Record",
+                "createOrEditLabel": "Create or Edit Record"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Record {{ id }}?"
+            },            
+            "value": "Value"            
+        },
+        "tabla" : {
+        	 "home": {
+                "title": "Catalogs",
+                "createLabel": "Create Catalog",
+                "createOrEditLabel": "Create or Edit Catalog"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Catalog {{ id }}?"
+            },           
+            "description": "Description"        
+        }
+    }
+}

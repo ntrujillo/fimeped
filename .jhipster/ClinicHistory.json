@@ -1,0 +1,51 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "clinic_add_inf",
+            "otherEntityName": "clinicHistoryAddInf",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "add_inf_clinic"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "person",
+            "otherEntityName": "person",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "clinic_episode",
+            "otherEntityName": "episode",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "episode_clinic"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "clinic_personal",
+            "otherEntityName": "personalHistory",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "personal_clinic"
+        },
+        {
+            "relationshipId": 5,
+            "relationshipName": "clinic_family",
+            "otherEntityName": "familyHistory",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "family_clinic"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "createDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20150831010021",
+    "dto": "no",
+    "pagination": "no"
+}

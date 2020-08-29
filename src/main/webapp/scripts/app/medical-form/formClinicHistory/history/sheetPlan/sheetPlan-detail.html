@@ -1,0 +1,38 @@
+
+<div>
+    <h2><span translate="fimepedApp.plan.detail.title">Plan</span> {{plan.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.plan.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{plan.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="fimepedApp.plan.episode">episode</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="episode.detail({id:plan.episode.id})">{{plan.episode.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

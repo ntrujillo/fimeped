@@ -1,0 +1,159 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/"><span translate="global.title">jhipster</span> <span class="navbar-version">v{{VERSION}}</span></a>
+        </div>        
+        <div class="collapse navbar-collapse" id="navbar-collapse" ng-switch="isAuthenticated()">
+            <ul class="nav navbar-nav nav-pills navbar-right">
+                <li ui-sref-active="active" ng-switch-when="true">
+                    <a ui-sref="home">
+                        <span class="glyphicon glyphicon-home"></span>
+                        <span translate="global.menu.home">Home</span>
+                    </a>
+                </li>
+               
+                <li ui-sref-active="active" ng-switch-when="true" class="dropdown pointer">
+                	<a class="dropdown-toggle" data-toggle="dropdown" href="">
+                                <span>
+                                    <span class="glyphicon glyphicon-folder-open"></span>
+                                    <span class="hidden-tablet" translate="global.menu.ficha.main">
+                                        Ficha
+                                    </span>
+                                    <b class="caret"></b>
+                                </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ui-sref-active="active"><a ui-sref="fichas.search"><span class="glyphicon glyphicon-search"></span>
+                            &#xA0;<span translate="global.menu.ficha.busqueda">Buscar Historia</span></a></li> 
+                            <li ui-sref-active="active"><a ui-sref="fichas.scheduled"><span class="glyphicon glyphicon-calendar"></span>
+                            &#xA0;<span translate="global.menu.ficha.agenda">Citas Agendadas</span></a></li>                        
+                    </ul>
+                </li>
+                 <li ui-sref-active="active" ng-switch-when="true" has-role="ROLE_ADMIN" class="dropdown pointer">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                                <span>
+                                    <span class="glyphicon glyphicon-th-list"></span>
+                                    <span class="hidden-tablet" translate="global.menu.entities.main">
+                                        Entities
+                                    </span>
+                                    <b class="caret"></b>
+                                </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ui-sref-active="active" ><a ui-sref="person"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.person">person</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="clinicHistory"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.clinicHistory">clinicHistory</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="country"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.country">country</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="provincia"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.provincia">provincia</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="canton"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.canton">canton</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="tabla"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.catalog">Catalogos</span></a></li>
+                      	<!--<li ui-sref-active="active" ><a ui-sref="clinicHistoryAddInf"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.clinicHistoryAddInf">clinicHistoryAddInf</span></a></li>                    
+                        <li ui-sref-active="active" ><a ui-sref="familyHistory"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.familyHistory">familyHistory</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="personalHistory"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.personalHistory">personalHistory</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="episode"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.episode">episode</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="reason"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.reason">reason</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="currentIllness"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.currentIllness">currentIllness</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="currentRevision"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.currentRevision">currentRevision</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="vitalSign"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.vitalSign">vitalSign</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="physicalExam"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.physicalExam">physicalExam</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="diagnostic"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.diagnostic">diagnostic</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="plan"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.plan">plan</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="evolutionPrescription"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.evolutionPrescription">evolutionPrescription</span></a></li>-->                        
+                        <!-- JHipster will add entities to the menu here -->
+                    </ul>
+                </li>
+                
+                <li ng-class="{active: $state.includes('admin')}"  ng-switch-when="true" has-role="ROLE_ADMIN" class="dropdown pointer">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                                <span>
+                                    <span class="glyphicon glyphicon-tower"></span>
+                                    <span class="hidden-tablet" translate="global.menu.admin.main">Administration</span>
+                                    <b class="caret"></b>
+                                </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ui-sref-active="active"><a ui-sref="metrics"><span class="glyphicon glyphicon-dashboard"></span>
+                            &#xA0;<span translate="global.menu.admin.metrics">Metrics</span></a></li>
+                        <li ui-sref-active="active"><a ui-sref="health"><span class="glyphicon glyphicon-heart"></span>
+                            &#xA0;<span translate="global.menu.admin.health">Health</span></a></li>
+                        <li ui-sref-active="active"><a ui-sref="configuration"><span class="glyphicon glyphicon-list-alt"></span>
+                            &#xA0;<span translate="global.menu.admin.configuration">Configuration</span></a></li>
+                        <li ui-sref-active="active"><a ui-sref="audits"><span class="glyphicon glyphicon-bell"></span>
+                            &#xA0;<span translate="global.menu.admin.audits">Audits</span></a></li>
+                        <li ui-sref-active="active"><a ui-sref="logs"><span class="glyphicon glyphicon-tasks"></span>
+                            &#xA0;<span translate="global.menu.admin.logs">Logs</span></a></li>
+                        <li ng-hide="inProduction" ui-sref-active="active"><a ui-sref="docs"><span class="glyphicon glyphicon-book"></span>
+                            &#xA0;<span translate="global.menu.admin.apidocs">API</span></a></li>
+                         <li ui-sref-active="active"><a ui-sref="register"><span class="glyphicon glyphicon-plus-sign"></span>
+                            &#xA0;<span translate="global.menu.account.register">Register</span></a></li>
+                    </ul>
+                </li>
+                <li ng-class="{active: $state.includes('account')}" ng-switch-when="true" class="dropdown pointer">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                                <span>
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span class="hidden-tablet" translate="global.menu.account.main">
+                                        Account
+                                    </span>
+                                    <b class="caret"></b>
+                                </span>
+                    </a>
+                    <ul class="dropdown-menu" >
+                        <li ui-sref-active="active" ><a ui-sref="settings">
+                        <span class="glyphicon glyphicon-wrench"></span>
+                            &#xA0;<span translate="global.menu.account.settings">Settings</span></a></li>
+                        <li ui-sref-active="active" ><a ui-sref="password"><span class="glyphicon glyphicon-lock"></span>
+                            &#xA0;<span translate="global.menu.account.password">Password</span></a></li>
+                          <li ui-sref-active="active" ><a href="" ng-click="logout()"><span class="glyphicon glyphicon-off"></span>
+                            &#xA0;<span translate="global.menu.account.logout">Log out</span></a></li>
+                        <!--  <li ui-sref-active="active" ><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span>
+                            &#xA0;<span translate="global.menu.account.login">Authenticate</span></a></li>-->
+
+                        <!-- <li ui-sref-active="active"><a ui-sref="register"><span class="glyphicon glyphicon-plus-sign"></span>
+                            &#xA0;<span translate="global.menu.account.register">Register</span></a></li> -->
+                    </ul>
+                </li>
+                <li ui-sref-active="active" class="dropdown pointer" ng-controller="LanguageController">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                                <span>
+                                    <span class="glyphicon glyphicon-flag"></span>
+                                    <span class="hidden-tablet" translate="global.menu.language">Language</span>
+                                    <b class="caret"></b>
+                                </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li active-menu="{{language}}" ng-repeat="language in languages">
+                            <a href="" ng-click="changeLanguage(language)">{{language | findLanguageFromKey}}</a>
+                        </li>
+                    </ul>
+                </li>
+               <!--  <li ng-switch-when="true">                
+                	<a href="" title="{{'global.menu.account.logout' | translate}}" ng-click="logout()"><span class="glyphicon glyphicon-off"></span></a>               	 
+                </li>--> 
+            </ul>
+        </div>
+    </div>
+</nav>

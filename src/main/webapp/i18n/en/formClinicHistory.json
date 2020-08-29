@@ -1,0 +1,46 @@
+{
+    "fimepedApp": {
+        "form" : {
+            "title" : "Clinic History",
+            "lbl_information":"Personal Information",
+            "lbl_clinic_history":"Clinic History",
+            "lbl_graphics":"Graphics",
+            "lbl_episodes":"Episodes",
+            "lbl_personal_history":"Personal History",
+            "lbl_family_history" : "Family History"                   
+        },
+        "sheet" : {        	
+        	"lbl_code":"Code",
+        	"lbl_date":"Date",
+        	"lbl_reason" : "Reason" ,
+        	"lbl_personal_history" : "Personal History",
+        	"lbl_family_history" : "Family History",
+        	"lbl_current_illness" : "Current Illness",
+        	"lbl_current_revision" : "Current Revision",
+        	"lbl_vital_sign" : "Vital Sign",
+        	"lbl_physical_exam" : "Physical Exam",
+        	"lbl_diagnostic" : "Diagnostics",
+        	"lbl_plan" : "Plans",
+        	"lbl_evolution_prescription" : "Evolution y Prescription",
+        	"lbl_new_episode":"New Episode",
+        	"lbl_find_episode":"Find Episode",
+        	"lbl_print_episode":"Print"
+        },        
+        "graphics" : {
+        	"lbl_head_circunference":"Head Circunference",
+            "lbl_length_height":"Length - Height",
+            "lbl_weight":"Weight",
+            "lbl_vital_sign":"Mediciones",
+            "lbl_graphic":"Graphic"
+        },
+        "episodes" : {
+        	"title" : "Find Episode",
+            "lbl_id":"Id",
+            "lbl_date":"Date",
+            "lbl_date_start":"From",
+            "lbl_date_end":"To",
+            "lbl_cancel":"Cancel"                    
+        }
+        
+    }
+}

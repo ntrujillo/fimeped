@@ -1,0 +1,22 @@
+{
+    "fimepedApp": {
+        "plan" : {
+            "home": {
+                "title": "Planes",
+                "createLabel": "Crear Plan",
+                "createOrEditLabel": "Crear o Editar Plan"
+            },
+            "created": "Plan creado {{ param }}",
+            "updated": "Plan actualizado {{ param }}",
+            "deleted": "Plan eliminado {{ param }}",
+            "delete": {
+                "question": "Está seguro que desea borrar el Plan {{ id }}?"
+            },
+            "detail": {
+                "title": "Plan"
+            },
+            "description": "Descripción",
+            "episode": "Episodio"
+        }
+    }
+}

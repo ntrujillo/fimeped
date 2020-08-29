@@ -1,0 +1,47 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="now" value="GETDATE()" dbms="mssql"/>
+
+    <property name="autoIncrement" value="true" dbms="mysql,h2,postgresql"/>
+    <property name="autoIncrement" value="false" dbms="oracle"/>
+    <property name="autoIncrement" value="true" dbms="mssql"/>
+
+    <property name="floatType" value="real" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle"/>
+
+    <!--
+        Added the entity ClinicHistory.
+    -->
+    <changeSet id="20150831010021" author="jhipster">
+        <createTable tableName="HS_HISTORIA_CLINICA">
+            <column name="CODIGO_HIS" type="bigint" autoIncrement="${autoIncrement}" >
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="FECHA_CRE_HIS" type="date"/>          
+            <column name="CODIGO_PER" type="bigint"/>
+        </createTable>    
+
+        <addForeignKeyConstraint baseColumnNames="CODIGO_PER"
+                                 baseTableName="HS_HISTORIA_CLINICA"
+                                 constraintName="fk_clinichistory_person_id"
+                                 referencedColumnNames="CODIGO_PER"
+                                 referencedTableName="GN_PERSONA"/>
+                                 
+                                 
+        <ext:loadData encoding="UTF-8"
+                  file="config/liquibase/clinic_historys.csv"
+                  separator=";"
+                  tableName="HS_HISTORIA_CLINICA" identityInsertEnabled="true">           
+            <column name="FECHA_CRE_HIS" type="timestamp"/>
+        </ext:loadData>
+        <dropDefaultValue tableName="HS_HISTORIA_CLINICA" columnName="FECHA_CRE_HIS" columnDataType="datetime"/>
+
+    </changeSet>
+</databaseChangeLog>

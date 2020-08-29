@@ -1,0 +1,131 @@
+{
+    "global": {
+        "title": "fimeped",
+        "browsehappy": "Está usando un navegador <strong>no actualizado</strong>. Por favor <a href=\"http://browsehappy.com/?locale=en\">actualice su navegador</a> para mejorar su experiencia.",
+        "menu": {
+            "home": "Inicio",
+            "ficha": {
+                "main": "Citas",
+                "busqueda": "Buscar Historia",
+                "agenda" :"Citas Agendadas"
+            },
+            "entities": {
+                "main": "Entidades",
+                "person": "Personas",
+                "clinicHistoryAddInf": "ClinicHistoryAddInf",
+                "clinicHistory": "Historia Clinica",
+                "familyHistory": "Antecedentes Familiares",
+                "personalHistory": "Antecedentes Personales",
+                "episode": "Episodios",
+                "reason": "Motivo de Consulta",
+                "currentIllness": "Enfermedad Actual",
+                "currentRevision": "Revision Actual",
+                "vitalSign": "Signos Vitales",
+                "physicalExam": "Examen Phisico",
+                "diagnostic": "Diagnóstico",
+                "plan": "Planes",
+                "evolutionPrescription": "Evolución y Prescripción",
+                "country": "Pais",
+                "provincia": "Provincia",
+                "canton": "Canton",
+                "additionalEntity": "JHipster will add additional entities here (do not translate!)",
+                "catalog":"Catalogos"
+            },
+            "account": {
+                "main": "Cuenta",
+                "settings": "Ajustes",
+                "password": "Contraseña",
+                "sessions": "Sesiones",
+                "login": "Iniciar sesión",
+                "logout": "Cerrar la sesión",
+                "register": "Crear una cuenta"
+            },
+            "admin": {
+                "main": "Administración",
+                "tracker": "Rastreador de los usarios",
+                "metrics": "Métricas",
+                "health": "Health",
+                "configuration": "Configuración",
+                "logs": "Logs",
+                "audits": "Auditorías",
+                "apidocs": "API",
+                "database": "Database"
+            },
+            "language": "Idioma"
+        },
+        "form": {
+            "username": "Usuario",
+            "username.placeholder": "Su usuario",
+            "newpassword": "Nueva contraseña",
+            "newpassword.placeholder": "Nueva contraseña",
+            "confirmpassword": "Confirmación de la nueva contraseña",
+            "confirmpassword.placeholder": "Confirmación de la nueva contraseña",
+            "email": "Correo electrónico",
+            "email.placeholder": "Su correo electrónico"
+        },
+        "messages": {
+            "info": {
+                "authenticated": "<a href=\"#/login\">Iniciar sesión</a>",
+                "register": "¿No tienes una cuenta todavía? <a href=\"#/register\">Crear una cuenta</a>"
+            },
+            "error": {
+                "dontmatch": "¡La contraseña y la confirmación no coinciden!"
+            },
+            "validate": {
+                "newpassword": {
+                    "required": "Se requiere que ingrese una contraseña.",
+                    "minlength": "Se requiere que su contraseña tenga por lo menos 5 carácteres",
+                    "maxlength": "Su contraseña no puede tener mas de 50 carácteres",
+                    "strength": "Seguridad de la contraseña:"
+                },
+                "confirmpassword": {
+                    "required": "Se requiere que confirme la contraseña.",
+                    "minlength": "Se requiere que su contraseña de confirmación tenga por lo menos 5 carácteres",
+                    "maxlength": "Su contraseña de confirmación no puede tener mas de 50 carácteres"
+                },
+                "email": {
+                    "required": "Se requiere un correo electrónico.",
+                    "invalid": "Su correo electrónico no es válido.",
+                    "minlength": "Se requiere que su correo electrónico tenga por lo menos 5 carácteres",
+                    "maxlength": "Su correo electrónico no puede tener mas de 50 carácteres"
+                }
+            }
+        },
+        "field": {
+            "id": "ID"
+        }
+    },
+    "entity": {
+        "action": {
+            "addblob": "Agregar blob",
+            "addimage": "Agregar imagen",
+            "back": "Atras",
+            "cancel": "Cancelar",
+            "delete": "Eliminar",
+            "edit": "Editar",
+            "save": "Guardar",
+            "view": "Vista",
+            "new" :"Nuevo"
+        },
+        "detail": {
+            "field": "Campo",
+            "value": "Valor"
+        },
+        "delete": {
+            "title": "Confirma borrar la operación"
+        },
+        "validation": {
+            "required": "Este campo es requerido",
+            "minlength": "Este campo requiere al menos {{min}} caracteres.",
+            "maxlength": "Este campo no puede ser mas largo que {{max}} caracteres.",
+            "min": "Este campo debe ser mayor que {{min}}.",
+            "max": "Este campo debe ser menor que{{max}}.",
+            "minbytes": "This field should be more than {{min}} bytes.",
+            "maxbytes": "This field cannot be more than {{max}} bytes.",
+            "pattern": "This field should follow pattern {{pattern}}.",
+            "number": "Este campo debe ser numérico",
+            "datetimelocal": "Este campo debe ser un date and time."
+        }
+    },
+    "footer": "Hospital del Dia - UCE"
+}

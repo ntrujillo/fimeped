@@ -1,0 +1,26 @@
+{
+    "fimepedApp": {
+        "catalog" : {
+            "home": {
+                "title": "Registros",
+                "createLabel": "Crear Registros",
+                "createOrEditLabel": "Crear o Editar Registro"
+            },
+            "delete": {
+                "question": "Esta seguro de querer borrar el Registro {{ id }}?"
+            },            
+            "value": "Valor"            
+        },
+        "tabla" : {
+        	 "home": {
+                "title": "Catalogos",
+                "createLabel": "Crear Catalogo",
+                "createOrEditLabel": "Crear o editar Catalogo"
+            },
+            "delete": {
+                "question": "Esta seguro de querer borrar el Catalogo {{ id }}?"
+            },           
+            "description": "Descripción"        
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "fimepedApp": {
+        "search" : {
+            "title" : "Buscar Historia Clinica",
+            "lbl_first_name":"Primer Nombre",
+            "lbl_second_name":"Segundo Nombre",
+            "lbl_paternal_surname":"Apellido Paterno",
+            "lbl_maternal_surname":"Apellido Materno",
+            "lbl_cedula":"Cedula",
+            "plh_search":"Buscar"
+        }
+    }
+}

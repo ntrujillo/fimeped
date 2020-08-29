@@ -1,0 +1,43 @@
+<div>
+	<div class="row">
+		<div class="col-xs-8">
+			<strong><span
+				translate="fimepedApp.sheet.lbl_date">Fecha</span> {{episode.date | date:'yyyy-MM-dd'}}</strong>
+			<br>
+			<strong><span translate="fimepedApp.sheet.lbl_code">Codigo</span>
+				{{episode.id}}</strong>  
+
+		</div>
+		<div class="col-xs-4">
+			<a href ng-click="openReport()"> 
+				<span
+				class="glyphicon glyphicon-print"></span> 
+				<span
+				translate="fimepedApp.sheet.lbl_print_episode">Imprimir</span>
+			</a>
+			<a href ng-click="createEpisode()"> <span
+				class="glyphicon glyphicon-open-file"></span> <span
+				translate="fimepedApp.sheet.lbl_new_episode">Nuevo</span>
+			</a> 
+			<a href ui-sref="fichas.form.history.find"> <span
+				class="glyphicon glyphicon-search"></span> <span
+				translate="fimepedApp.sheet.lbl_find_episode">Buscar</span>
+			</a>
+		</div>
+	</div>
+
+	<div ng-class ={disabled:(episode.id===undefined)} class="row">
+		<div  id ="menu-areas" class="col-xs-12 col-sm-2">
+			<ul  id="menu"  class="list-group">
+				<!-- link area -->
+				<li  ui-sref-active="active" id="li-{{area.title}}" class="list-group-item" data-ng-repeat="area in areas">
+				<a  id="link-{{area.title}}" href ui-sref="{{area.state}}" >{{area.title | translate}} </a>				
+				</li>
+				
+			</ul>
+		</div>
+		<div class="col-xs-12 col-sm-10">
+			<div ui-view="content.sheet"></div>
+		</div>
+	</div>	
+</div>

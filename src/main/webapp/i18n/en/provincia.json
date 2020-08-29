@@ -1,0 +1,23 @@
+{
+    "fimepedApp": {
+        "provincia" : {
+            "home": {
+                "title": "Provincias",
+                "createLabel": "Create a new Provincia",
+                "createOrEditLabel": "Create or edit a Provincia"
+            },
+            "created": "A new Provincia is created with identifier {{ param }}",
+            "updated": "A Provincia is updated with identifier {{ param }}",
+            "deleted": "A Provincia is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Provincia {{ id }}?"
+            },
+            "detail": {
+                "title": "Provincia"
+            },
+            "name": "Name",
+            "country": "Country",
+            "canton": "Canton"
+        }
+    }
+}

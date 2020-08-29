@@ -1,0 +1,13 @@
+{
+    "fimepedApp": {
+    	"scheduled": {
+    	 "title": "Citas Agendadas",
+    	 "turn":"Turno",
+    	 "date":"Fecha",
+    	 "firstName":"Nombre",
+    	 "paternalSurname" :"Apellido",
+    	 "status" :"Estado" 	 
+    	}  
+              
+    }
+}

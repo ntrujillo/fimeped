@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="vital-sign" columnCount="8" printOrder="Horizontal" pageWidth="595" pageHeight="842" columnWidth="74" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8ef59fe4-270f-4ac9-b6e9-79c078dbdb2d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="REPORT_TITLE" class="java.lang.String" isForPrompting="false"/>
+	<field name="date" class="java.util.Date"/>
+	<field name="bloodPressure" class="java.lang.String"/>
+	<field name="pulse" class="java.lang.Integer"/>
+	<field name="temperature" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="17" splitType="Stretch">
+			<textField>
+				<reportElement uuid="351721e9-a75a-4921-98e9-c21da92ee14b" mode="Opaque" x="7" y="0" width="531" height="15" backcolor="#FFFFFF"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_TITLE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="2" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement uuid="4f290cda-7d13-42b0-abd9-2cee1dbc86ee" x="7" y="0" width="58" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ce0ae1b8-baf8-4c9c-8150-426433a7927d" x="7" y="13" width="58" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{bloodPressure}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="467a7bee-f4f6-4b1e-a70b-87286adafe81" x="7" y="27" width="58" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{pulse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2c5ef6ab-9e73-419f-b07b-6aa5d78fb9f3" x="7" y="41" width="58" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{temperature}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="1" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="1" splitType="Stretch"/>
+	</summary>
+</jasperReport>

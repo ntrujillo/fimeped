@@ -1,0 +1,36 @@
+{
+    "main": {
+        "title": "¡Bienvenido!",
+        "subtitle": "Esta es su página de inicio",
+        "logged": {
+            "message": "Esta conectado como \"{{username}}\"."
+        },
+        "question": "Si tiene preguntas sobre JHipster:",
+        "link": {
+            "homepage": "Página de inicio de JHipster",
+            "stackoverflow": "JHipster en Stack Overflow",
+            "bugtracker": "JHipster seguimiento de errores",
+            "chat": "JHipster public chat room",
+            "contact": "contacto @java_hipster en Twitter"
+        },
+        "like": "Si le gusta JHipster, danos una estrella en",
+        "github": "Github"
+    },
+     "login": {
+        "title": "Iniciar sesión",
+        "form": {
+            "password": "Contraseña",
+            "password.placeholder": "Su Contraseña",
+            "rememberme": "Iniciar la sesión automáticamente",
+            "button": "Iniciar sesión"
+        },
+        "messages": {
+            "error": {
+                "authentication": "<strong>¡El inicio de sesión ha fallado!</strong> Por favor revise las credenciales e intente de nuevo."
+            }
+        },
+        "password" : {
+            "forgot": "Olvidaste tu constraseña?"
+        }
+    }
+}

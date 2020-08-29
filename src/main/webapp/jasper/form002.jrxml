@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="169bf782-8692-486f-8be5-612dfebbdf78">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="84"/>
+	<parameter name="dsReason" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[$P{SUBREPORT_DIR}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TITLE_REASON" class="java.lang.String"/>
+	<parameter name="TITLE_PERSONAL_HISTORY" class="java.lang.String"/>
+	<parameter name="TITLE_FAMILY_HISTORY" class="java.lang.String"/>
+	<parameter name="TITLE_CURRENT_ILLNESS" class="java.lang.String"/>
+	<parameter name="TITLE_CURRENT_REVISION" class="java.lang.String"/>
+	<parameter name="TITLE_PHYSICAL_EXAM" class="java.lang.String"/>
+	<parameter name="TITLE_DIAGNOSTIC" class="java.lang.String"/>
+	<parameter name="TITLE_PLAN" class="java.lang.String"/>
+	<parameter name="TITLE_VITAL_SIGN" class="java.lang.String"/>
+	<parameter name="dsPersonalHistory" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="dsFamilyHistory" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="dsCurrentIllness" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="dsCurrentRevision" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="dsPhysicalExam" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="dsPlan" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="dsVitalSign" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="dsDiagnostic" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<field name="institution" class="java.lang.String"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="clinicHistory" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="93c2f1cd-07b2-4d85-9d8b-93a51405eb13" x="6" y="11" width="539" height="48"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="fef87695-6fec-4231-9050-3b62532c15ac" mode="Opaque" x="10" y="13" width="115" height="20" backcolor="#CCFFCC"/>
+				<textElement/>
+				<text><![CDATA[Establecimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6149bd25-4956-4200-ad1d-426e401608eb" mode="Opaque" x="125" y="13" width="140" height="20" backcolor="#CCFFCC"/>
+				<textElement/>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="aa539083-ec02-4f21-b798-8903c3aaff09" mode="Opaque" x="265" y="13" width="146" height="20" backcolor="#CCFFCC"/>
+				<textElement/>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="184f1bd7-2494-48d4-b69e-e769d7fda66d" mode="Opaque" x="411" y="13" width="34" height="20" backcolor="#CCFFCC"/>
+				<textElement/>
+				<text><![CDATA[Sexo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3afe546f-c68d-441e-92b5-6ea7519bb015" mode="Opaque" x="445" y="13" width="100" height="20" backcolor="#CCFFCC"/>
+				<textElement/>
+				<text><![CDATA[Historia Clinica]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="904794cd-dcf4-44f2-bee0-0ac87bab9864" x="6" y="35" width="539" height="4"/>
+			</line>
+			<textField>
+				<reportElement uuid="07c37ad3-2390-4797-a1bc-8c62641bcea0" x="12" y="38" width="113" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{institution}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="336455ef-dc24-4a2c-9541-84c524098d3f" x="125" y="39" width="140" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="309ad62a-1c50-4ce0-b65e-46ff0204801b" x="267" y="39" width="144" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8b733547-c437-4ae3-a637-adde6d552af7" x="411" y="40" width="34" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="628c40ad-4022-4de2-b462-72047b0db0fe" x="445" y="39" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{clinicHistory}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="3" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="444" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="f4a6d020-8e9d-4ca0-a948-5218ce19699d" x="0" y="12" width="555" height="37"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_REASON}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsReason}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "generic-record.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="9468a998-6f7f-449b-8db8-677d944ec25d" positionType="Float" x="0" y="132" width="555" height="41"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_CURRENT_ILLNESS}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsCurrentIllness}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "generic-record.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="1f28cbeb-93d7-4b37-af0c-59d00db72932" positionType="Float" x="0" y="340" width="555" height="46"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_PLAN}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsPlan}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "generic-record.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="0e29cc54-2b03-4af9-b9b1-a7fe4acfe47a" positionType="Float" x="0" y="213" width="555" height="44"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_VITAL_SIGN}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsVitalSign}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "vital-sign.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="145383ab-e24b-45a3-8fba-28cfe0eb942b" positionType="Float" x="0" y="299" width="555" height="41"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_DIAGNOSTIC}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsDiagnostic}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "diagnostic.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="7922b32f-8470-4964-aa52-252c015a663f" positionType="Float" x="0" y="173" width="555" height="40"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_CURRENT_REVISION}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsCurrentRevision}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "current-revision.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="80220793-41ef-456c-9019-ff3eb0bfc0b9" positionType="Float" x="0" y="257" width="555" height="42"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_PHYSICAL_EXAM}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsPhysicalExam}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "physical-exam.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="ceae6c24-34a6-4229-8bdd-0d505cadc731" positionType="Float" x="0" y="49" width="555" height="38"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_PERSONAL_HISTORY}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsPersonalHistory}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "generic-record-code.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="6782cb38-5d84-44b8-928d-fbaddba82ea7" positionType="Float" x="0" y="87" width="555" height="45"/>
+				<subreportParameter name="REPORT_TITLE">
+					<subreportParameterExpression><![CDATA[$P{TITLE_FAMILY_HISTORY}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{dsFamilyHistory}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "generic-record-code.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="14" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="12" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>
